@@ -17,6 +17,12 @@ API kullanılarak anlık olarak gelen verilerin gerekli olanları çekilmişitir
 - Rüzgar Yönü
 - Bulutluluk
 
+##### Veri Yazma İşlemi
+#
+```php
+echo "Sıcaklık: ". explode('.' ,$havaJSON["currentConditions"]["temp"])[0]."°C <br>";
+```
+Yukarıdaki örnekte sıcaklık verisi alınmıştır, Explode kullanımm amacı noktalı gelen sayıyın noktadan öncesini almaktır.
 
 ##### Anlık Gelen Verilerin Tümü;
 #
